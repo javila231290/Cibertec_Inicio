@@ -21,8 +21,25 @@ namespace WebDeveloper.DataAccess
                 new Client {Name="Lucho", LastName="Grados" },
             };
 
+            var product = new List<Product>
+            {
+                new Product {Description="Zapatos Calimon", Category="Calzado", Price=310, Registry=DateTime.Now},
+                new Product {Description="Casaca Cuerina", Category="Vestuario", Price=220, Registry=DateTime.Now},
+                new Product {Description="Televisor Samsumg 35''", Category="Electro", Price=2500, Registry=DateTime.Now},
+                new Product {Description="Pelota Adedos", Category="Deporte", Price=55, Registry=DateTime.Now},
+                new Product {Description="Leche Gloria", Category="Abarrotes", Price=15, Registry=DateTime.Now},
+            };
+
             client.ForEach(c => context.Clients.Add(c));
-            context.SaveChanges();
+            product.ForEach(c => context.Products.Add(c));
+            try
+            {
+                context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                
+            }            
         }
     }
 }

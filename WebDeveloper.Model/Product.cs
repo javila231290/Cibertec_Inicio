@@ -22,7 +22,7 @@ namespace WebDeveloper.Model
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "This Price is required")]
         [Display(Name = "Price")]
-        [Range(0, 1000, ErrorMessage = "Rango valido Min=0 Max=1000")]
+        [Range(0, 10000, ErrorMessage = "Rango valido Min=0 Max=1000")]
         public float Price { get; set; }
 
         [Required(ErrorMessage = "This Registration Date is required")]
