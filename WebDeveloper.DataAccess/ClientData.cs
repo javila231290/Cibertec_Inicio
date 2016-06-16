@@ -11,11 +11,8 @@ namespace WebDeveloper.DataAccess
     {
         
         public Client GetClientById (int? id)
-        {
-            using (var dbContext = new WebContextDb())
-            {
+        {   
                 return GetList().Where(s => s.ID == id).FirstOrDefault();
-            }
         }
     }
 }
