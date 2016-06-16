@@ -38,9 +38,7 @@ namespace WebDeveloper.Controllers
             //Client client = _client.GetList().Where(s => s.ID == id).FirstOrDefault();
             var client = _client.GetClientById(id);
             if (client == null)
-            {
-                return HttpNotFound();
-            }
+                return RedirectToAction("Index");
             return View(client);
         }
 
@@ -60,17 +58,16 @@ namespace WebDeveloper.Controllers
             //Client client = _client.GetList().Where(s => s.ID == id).FirstOrDefault();
             var client = _client.GetClientById(id);
             if (client == null)
-            {
-                return HttpNotFound();
-            }
+                return RedirectToAction("Index");
             return View(client);
         }
 
         [HttpPost]
         public ActionResult Delete(Client client)
         {
-                _client.Delete(client);
+            if (_client.Delete(client) > 0)
                 return RedirectToAction("Index");
+            return View();
         }
     }
 }
