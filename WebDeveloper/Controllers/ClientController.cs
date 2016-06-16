@@ -35,7 +35,8 @@ namespace WebDeveloper.Controllers
 
         public ActionResult Edit(int id = 0)
         {
-            Client client = _client.GetList().Where(s => s.ID == id).FirstOrDefault();
+            //Client client = _client.GetList().Where(s => s.ID == id).FirstOrDefault();
+            var client = _client.GetClientById(id);
             if (client == null)
             {
                 return HttpNotFound();
@@ -56,7 +57,8 @@ namespace WebDeveloper.Controllers
 
         public ActionResult Delete(int id = 0)
         {
-            Client client = _client.GetList().Where(s => s.ID == id).FirstOrDefault();
+            //Client client = _client.GetList().Where(s => s.ID == id).FirstOrDefault();
+            var client = _client.GetClientById(id);
             if (client == null)
             {
                 return HttpNotFound();
