@@ -16,5 +16,7 @@ namespace WebDeveloper.Model
         [Required(ErrorMessage = "This Last Name is required")]
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
+
+
     }
 }
