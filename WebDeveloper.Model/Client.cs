@@ -17,6 +17,6 @@ namespace WebDeveloper.Model
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
-
+        public DateTime? DateCreation { get; set; }
     }
 }
