@@ -74,7 +74,7 @@ namespace WebDeveloper.Helpers
         }
         private static string GetHtmlDate(DateTime? date)
         {           
-            return (date == null) ? $"<span>None</span>" : $"<span>{date}</span>";
+            return (date == null) ? $"<span>None</span>" : $"<span>{date.Value.ToString("dd-mm-yyyy")}</span>";
         }
 
     }
