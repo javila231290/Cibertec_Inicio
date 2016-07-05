@@ -10,8 +10,14 @@ namespace WebDeveloper.Controllers
 {
     public class ClientController : Controller
     {
-        private ClientData _client = new ClientData();
+        //private ClientData _client = new ClientData();
+        private ClientData _client;
         // GET: Client
+        public ClientController(ClientData client)
+        {
+            _client = client;
+        }
+
         public ActionResult Index()
         {           
             return View(_client.GetList());

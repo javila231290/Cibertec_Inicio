@@ -10,8 +10,14 @@ namespace WebDeveloper.Controllers
 {
     public class ProductController : Controller
     {
-        private ProductData _product = new ProductData();
+        //private ProductData _product = new ProductData();
+        private ProductData _product;
         // GET: Product
+
+        public ProductController(ProductData product)
+        {
+            _product = product;
+        }
         public ActionResult Index()
         {
             return View(_product.GetList());

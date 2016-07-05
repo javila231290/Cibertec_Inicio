@@ -117,10 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Target" xml:space="preserve">
-    <value>H4sIAAAAAAAEAO1YyW7jRhC9B8g/EDwlgEft5ZIY1AwcyQ6EjGzD9EzOLbIkN9IL0900pG+bQz4pv5Bq7ptkaeQxgiAQIEjFqlfVtTf//vJX8GEtuPcM2jAlx/7Z6NT3QEYqZnI19lO7fPeT/+H9998F17FYe59LvgvHh5LSjP0na5NLQkz0BIKakWCRVkYt7ShSgtBYkfPT05/J2RkBhPARy/OCh1RaJiD7g38nSkaQ2JTyuYqBm4KOT8IM1bulAkxCIxj7v8NiCs/AVQJ6NKWWXkURGON7V5xRNCcEvvQ9KqWy1KKxl58MhFYruQoTJFD+uEkA+ZaUGygOcVmz73ue03N3HlILllBRaqwSBwKeXRQOIl3xr3KzXzkQXXiNrrYbd+rMjWN/whlI63tdVZcTrh1bx8dZSEa50InXf3RSpQVmj/uceJOU21TDWEJqNUWO+3TBWfQbbB7VHyDHMuW8aSNaic9aBCTda6fEbh5gWVg+m/oeacuRrmAl1pDJTzWT9uLc925ROV1wqFKg4YHQKg2/ggRNLcT31FrQGMFZDJkTe9o7utx3qQ1zDmvI9+Z0/RHkyj6NffzpezdsDXFJKSz4JBmWHApZncKAhbu1XiXAOYuV+daqA1Ln0s4MQwPjNDo0xQqp/3Nsp64pmEizJO8Nb51qEzR5pfTm7TXfaxbVtYVK+eEYD7BixtbW4/SARyaOS3ucXZYyjGahBJPXkWBtp4uBAsBpVNSAKTzRNjkHDcG2mjWWdm1DPuNGZRsnuwGKqhpCqMp06LTVuephTPJpXE5tsmVsB3OaJBihxhgvKF6Yz/DJu/DwuSZyDBKZgfFWWVtpwiqjK+g8RdVo6Q3TxrrVYUFdrCex6LG1orjFwaWqdqC6Hab2esnvfle5MrTLlKHtQNV+vMGjCeTITgmVQdVo7wlmmxTlVA80roniqZDbmt8u6XzcNeVzyv4IjdHVhGmQ+1gB6Xih63HSc3mnnXcjuFd8qzp6jQCXlXd4hLdKfpsQt6ZNE6b1YH+8eoA0wWrq/kjFQGjCFKT9MeqB0ISpqW+cfL3W22WptFctuNNqg6LtvXyN6vXBnMX30EXPLHY9MNwYCyJL21H4Jy/nTckwp5Itwdh83fLxEnPeuYT9ey5ExJiY73UrevONkTmfvrgTHrjpNC8i8pnq6InqHwRd/3j85eIQuIMvDP8N7w+s6McFobt2H4fWWqU1UH70Ih2jffa1F+n+prbPprxjUc47HFq7UGh4buVhS/SuHXoI/dgFu9/NA9J8dRZgprFVDeFepEmIXOLVoCXPTC5VGUc8WdOikqUT5jlYGrulRVu2pJHFx257yW58nylPkeVaLCCeybvUJqm9MgbEgrcGZ0B2689uEW2bg7usdMxrHAHNZC477+QvKeNxZffNQHZugXB5WDQHtApvvK4YNxXSrZJ7AhXum0IC0rWWRxAJRzBzJ0P6DF9jG94mP8KKRptyKG8HeTkQbbcHU0ZXmgpTYNTy7nUwce+D3/8DbHAlAUEWAAA=</value>
+  <data name="Client_DateCreation" xml:space="preserve">
+    <value>Date</value>
   </data>
-  <data name="DefaultSchema" xml:space="preserve">
-    <value>dbo</value>
+  <data name="Client_Id" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Client_LastName" xml:space="preserve">
+    <value>LastName</value>
+  </data>
+  <data name="Client_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Product_Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="Product_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Product_Id" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Product_Price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="Product_Registry" xml:space="preserve">
+    <value>Date Creation</value>
   </data>
 </root>
