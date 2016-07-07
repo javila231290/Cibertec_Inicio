@@ -8,6 +8,7 @@ using WebDeveloper.DataAccess;
 
 namespace WebDeveloper.Controllers
 {
+    [Authorize]
     public class ProductController : Controller
     {
         //private ProductData _product = new ProductData();

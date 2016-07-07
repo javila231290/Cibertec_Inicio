@@ -9,6 +9,7 @@ using WebDeveloper.Model;
 
 namespace WebDeveloper.Controllers
 {
+    [Authorize]
     [LogActionFilter]
     [RoutePrefix("Razor")]
     public class RazorController : Controller
