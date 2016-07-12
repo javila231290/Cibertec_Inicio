@@ -27,8 +27,9 @@ namespace WebDeveloper
                         validateInterval: TimeSpan.FromMinutes(30),
                         regenerateIdentity: (manager, user) => user.GenerateUserIdentityAsync(manager))
                 }
-            });            
-            
+            });
+
+            app.UseExternalSignInCookie();
         }
     }
 }
