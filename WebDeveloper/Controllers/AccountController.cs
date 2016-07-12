@@ -16,7 +16,8 @@ namespace WebDeveloper.Controllers
     {
         public UserManager<WebDeveloperUser> UserManager { get; private set; }
 
-        public AccountController() : this(new UserManager<WebDeveloperUser>
+        public AccountController() 
+            : this(new UserManager<WebDeveloperUser>
                   (new UserStore<WebDeveloperUser>
                 (new WebUserDbContext())))
         {
@@ -47,7 +48,7 @@ namespace WebDeveloper.Controllers
             if(ModelState.IsValid)
             {
                 var user = new WebDeveloperUser { UserName = model.UserName };
-                UserManager.Create(user, model.Password);
+                //UserManager.Create(user, model.Password);
                 var result = await UserManager.CreateAsync(user, model.Password); // mas rapido y devuelve un valor
                 if(result.Succeeded)
                 {
@@ -61,6 +62,12 @@ namespace WebDeveloper.Controllers
                 return RedirectToAction("Index", "Home");
             }            
             return View(model);
+        }
+        [HttpPost]
+        public ActionResult LogOff()
+        {
+            AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+            return RedirectToAction("Index", "Home");
         }
 
         private IAuthenticationManager AuthenticationManager
