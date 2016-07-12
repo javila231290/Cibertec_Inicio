@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WebDeveloper.DataAccess
 {
-    public class BaseDataAccess<T> : IDataAccess<T> where T:class
+    public class BaseDataAccess<T> : IDataAccess<T> where T : class
     {
         public int Add(T entity)
         {
@@ -43,5 +40,6 @@ namespace WebDeveloper.DataAccess
                 return dbContext.SaveChanges();
             }
         }
+
     }
 }

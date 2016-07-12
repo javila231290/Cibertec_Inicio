@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D5C2265A-9311-4C39-BAF6-4614A8F78757}</ProjectGuid>
+    <ProjectGuid>{B738A10E-30AD-4154-BEDC-13F6DDC91B8E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WebDeveloper.DataAccess</RootNamespace>
@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=4.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -49,17 +53,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutomapperConfig.cs" />
     <Compile Include="BaseDataAccess.cs" />
-    <Compile Include="ClientData.cs" />
     <Compile Include="IDataAccess.cs" />
-    <Compile Include="ProductData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebContextDb.cs" />
-    <Compile Include="WebDeveloperInitializer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WebDeveloper.Model\WebDeveloper.Model.csproj">
-      <Project>{33623b2d-a741-4925-8fd2-91f6a3234baf}</Project>
+      <Project>{799ec88d-c8f0-47bc-a707-9c74023e17a5}</Project>
       <Name>WebDeveloper.Model</Name>
     </ProjectReference>
   </ItemGroup>

@@ -12,70 +12,26 @@ namespace WebDeveloper.Helpers
     {
         public static IHtmlString DisplayPriceStatic(double price)
         {
-            //if (price == 0.0)
-            //    return new HtmlString("<span>: Free!!!</span>");
-            //else
-            //    return new HtmlString(String.Format("<span>: {0}</span>",price));
-
-            //var result = string.Empty;
-            //if (price == 0.0)
-            //    result = "<span>Free!!!</span>";
-            //else
-            //    result = $"<span>{price}</span>";
-            //return new HtmlString(result);  
-            
-            //var result = (price == 0.0)? "<span>: Free!!!</span>" : $"<span>{price}</span>";
-            //return new HtmlString(result);
-
-            return new HtmlString(GetHtmlPrice(price));
+            return new HtmlString(GetHtmlForPrice(price));
         }
 
         public static IHtmlString DisplayPriceExtension(this HtmlHelper helper, double price)
         {
-            //var result = string.Empty;
-            //if (price == 0.0)
-            //    result = "<span>Free!!!</span>";
-            //else
-            //    result = $"<span>{price}</span>";
-            //return new HtmlString(result);
-
-            //var result = (price == 0.0) ? "<span>: Free!!!</span>" : $"<span>{price}</span>";
-            //return new HtmlString(result);
-
-            return new HtmlString(GetHtmlPrice(price));
+            return new HtmlString(GetHtmlForPrice(price));
         }
-
-        public static IHtmlString DisplayDateOrNullStatic(DateTime? date)
+        private static string GetHtmlForPrice(double price)
         {
-            //var result = (date == null) ? $"<span>None</span>" : $"<span>{date}</span>";
-            //return new HtmlString(result);
-
-            return new HtmlString(GetHtmlDate(date));
+            return price == 0.0 ? "<span>Free!!!</span>" : $"<span>{price.ToString("C")}</span>";
         }
 
         public static IHtmlString DisplayDateOrNullExtension(this HtmlHelper helper, DateTime? date)
         {
-            //var result = string.Empty;
-            //if (date == null)
-            //    result = $"<span>None</span>";
-            //else
-            //    result = $"<span>{date}</span>";
-            //return new HtmlString(result);
-
-            //var result = (date == null) ? $"<span>None</span>" : $"<span>{date}</span>";
-            //return new HtmlString(result);
-
-            return new HtmlString(GetHtmlDate(date));
+            return new HtmlString(GetDateHtml(date));
         }
 
-        private static string GetHtmlPrice(double price)
+        private static string GetDateHtml(DateTime? date)
         {            
-            return (price == 0.0) ? "<span>: Free!!!</span>" : $"<span>{price}</span>"; 
+            return date.HasValue ? $"<span>{date.Value.ToString("dd-mm-yyyy")}</span>" : "None";
         }
-        private static string GetHtmlDate(DateTime? date)
-        {           
-            return (date == null) ? $"<span>None</span>" : $"<span>{date.Value.ToString("dd-mm-yyyy")}</span>";
-        }
-
     }
 }

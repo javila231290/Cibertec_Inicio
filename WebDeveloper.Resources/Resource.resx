@@ -117,31 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Client_DateCreation" xml:space="preserve">
-    <value>Date</value>
+  <data name="FirstName" xml:space="preserve">
+    <value>First Name</value>
   </data>
-  <data name="Client_Id" xml:space="preserve">
-    <value>ID</value>
+  <data name="LastName" xml:space="preserve">
+    <value>Last Name</value>
   </data>
-  <data name="Client_LastName" xml:space="preserve">
-    <value>LastName</value>
-  </data>
-  <data name="Client_Name" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="Product_Category" xml:space="preserve">
-    <value>Category</value>
-  </data>
-  <data name="Product_Description" xml:space="preserve">
-    <value>Description</value>
-  </data>
-  <data name="Product_Id" xml:space="preserve">
-    <value>ID</value>
-  </data>
-  <data name="Product_Price" xml:space="preserve">
-    <value>Price</value>
-  </data>
-  <data name="Product_Registry" xml:space="preserve">
-    <value>Date Creation</value>
+  <data name="MiddleName" xml:space="preserve">
+    <value>Middle Name</value>
   </data>
 </root>
