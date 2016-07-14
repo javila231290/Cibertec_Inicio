@@ -12,8 +12,7 @@ namespace WebDeveloper
         public void Configuration(IAppBuilder app)
         {
             CreateUserAndRole();
-            ConfigureAuth(app);            
-            ConfigInjector();
+            ConfigureAuth(app);       
         }
 
         internal void CreateUserAndRole()

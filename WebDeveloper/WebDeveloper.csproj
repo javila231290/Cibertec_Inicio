@@ -179,11 +179,8 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="App_Start\Startup.Injector.cs" />
     <Compile Include="Areas\Internal\InternalAreaRegistration.cs" />
     <Compile Include="Areas\Internal\Models\UserModelView.cs" />
-    <Compile Include="Areas\Person\Controllers\PersonController.cs" />
-    <Compile Include="Areas\Person\PersonAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BaseAccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -217,12 +214,6 @@
     <Content Include="Areas\Internal\Views\Internal\Index.cshtml" />
     <Content Include="Areas\Internal\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Internal\Views\Internal\Create.cshtml" />
-    <Content Include="Areas\Internal\Views\Internal\Edit.cshtml" />
-    <Content Include="Areas\Internal\Views\Internal\Delete.cshtml" />
-    <Content Include="Areas\Person\Views\web.config" />
-    <Content Include="Areas\Person\Views\_ViewStart.cshtml" />
-    <Content Include="Areas\Person\Views\Person\Index.cshtml" />
-    <Content Include="Areas\Person\Views\Person\_EmailList.cshtml" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
@@ -273,8 +264,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Internal\Views\Shared\" />
-    <Folder Include="Areas\Person\Models\" />
-    <Folder Include="Areas\Person\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
